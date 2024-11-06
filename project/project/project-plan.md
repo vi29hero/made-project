@@ -13,9 +13,7 @@ This study examines the correlation between air quality and U.S. Chronic Disease
 
 Datasources
 
-Datasource1:
-
-U.S. Chronic Disease Indicators (CDI), 2023 Release
+Datasource1: U.S. Chronic Disease Indicators (CDI), 2023 Release
 
 Metadata URL: https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi
 
@@ -23,9 +21,7 @@ Data URL: https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi/re
 
 Data Type: JSON
 
-Datasource2: 
-
-Air Quality
+Datasource2: Air Quality
 
 Metadata URL: https://catalog.data.gov/dataset/air-quality
 
