@@ -1,0 +1,36 @@
+name: Proj_CI
+
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'project/**'
+    branches:
+      - main
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+
+      # Step 3: Install dependencies (if any)
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run the tests
+      - name: Run tests
+        run: |
+          chmod +x ./project/tests.sh
+          ./project/tests.sh
